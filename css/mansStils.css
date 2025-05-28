@@ -1,7 +1,5 @@
 body {
-    background-image: url("../images/fons.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: #a34d17;
     color: green;
     font-family: Arial, sans-serif;
 }
