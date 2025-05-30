@@ -20,6 +20,28 @@
     <p>Šeit ir arī jautra (nesaistīta) animācija, ko pats uztaisīju:</p>
     <img src="images/fireballreal.gif" alt="FIREBALL!!!" style="width:300px">
     <br><br>
+    <p>Izvēlies automašīnas modeli:</p>
+
+    <input type="radio" name="auto" value="tesla3" onclick="paradiGadu('Tesla Model 3', 2017)"> Tesla Model 3<br>
+    <input type="radio" name="auto" value="bmw320" onclick="paradiGadu('BMW 320', 2005)"> BMW 320<br>
+    <input type="radio" name="auto" value="audiA6" onclick="paradiGadu('Audi A6', 2012)"> Audi A6<br>
+    <input type="radio" name="auto" value="volvoXC90" onclick="paradiGadu('Volvo XC90', 2019)"> Volvo XC90<br><br>
+
+    <button onclick="izvelies()">Cik veca ir šī mašīna?</button>
+
+    <p id="jaizvelas" style="font-weight: bold; margin-top: 10px;"></p>
+
+    <script>
+        let izveletaisModelis = null;
+        let izveletaGads = null;
+        function paradiGadu(modelis, gads){
+            izveletsModelis = modelis;
+            izveletsGads = gads;}
+        function izvelies(){
+            if (izveletaisModelis && izveletaGads) {document.getElementById("rezultats").innerText = izveletaisModelis + " tika izlaists " + izveletaGads + ".";} 
+            else {document.getElementById("jaizvelas").innerText = "Lūdzu izvēlies modeli!";}}
+</script>
+    <br><br>
     <p>Atgriezties uz sākumu:</p>
     <a href="index.html">
         <img src="images/bulta.png" alt="Atpakaļ uz sākumu" style="width:50px;">
