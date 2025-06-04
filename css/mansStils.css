@@ -13,9 +13,3 @@ body {
     color: chocolate;
     font-size: 200%;
 }
-nav {
-    background-image: url("../images/skola.jpg");
-    background-size: contain;
-    background-repeat: repeat;
-    padding: 10px;
-}
